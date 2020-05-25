@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendances",
+  "info": {
+    "name": "Attendance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "event": {
+      "model": "event",
+      "via": "attendances"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "attendances"
+    }
+  }
+}
