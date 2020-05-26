@@ -10,8 +10,8 @@
   },
   "attributes": {
     "event": {
-      "model": "event",
-      "via": "attendances"
+      "via": "attendances",
+      "model": "event"
     },
     "user": {
       "plugin": "users-permissions",

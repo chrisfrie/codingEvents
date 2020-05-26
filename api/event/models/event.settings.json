@@ -15,7 +15,7 @@
     },
     "detail": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "location": {
       "type": "string",
@@ -30,8 +30,8 @@
       "via": "hostedEvents"
     },
     "attendances": {
-      "via": "event",
-      "collection": "attendance"
+      "collection": "attendance",
+      "via": "event"
     }
   }
 }
